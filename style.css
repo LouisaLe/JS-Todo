@@ -2,4 +2,128 @@
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(120deg, #5194A3, #255661);
+    transition: all 0.3s ease;
+}
+
+.container {
+    padding-top: 100px;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+header {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.form {
+    width: 325px;
+}
+
+input {
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 8px 40px 8px 8px;
+    width: 300px;
+}
+
+button[type="submit"] {
+    border: none;
+    outline: none;
+    position: relative;
+    left: -35px;
+    top: 2px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.svg-inline--fa.fa-w-14,
+.svg-inline--fa.fa-w-10 {
+
+    height: 20px;
+    width: 20px;
+}
+
+.todo-filter input {
+    width: 100px;
+}
+
+.fixed-element {
+    display: flex;
+    margin-bottom: 20px;
+}
+select {
+    cursor: pointer;
+    height: 43px;
+    width: 120px;
+    padding: 0 8px;
+    outline: none;
+    border: none;
+}
+
+.todo__item {
+    display: flex;
+    margin-bottom: 10px;
+    transition: all 0.5s ease;
+}
+
+.todo__item.completed {
+    opacity: 0.8;
+}
+
+.todo__item.completed .todo__input {
+    text-decoration: line-through;
+}
+
+.todo__item.fall {
+    transform: translateY(8rem) rotate(20deg);
+    opacity: 0;
+}
+
+.todo__item .todo__input {
+    width: 325px;
+    background-color: #ffffff;
+    color: #333333;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 8px 4px 8px 8px;
+    height: 43px;
+}
+
+.action-container {
+    display: flex;
+}
+
+.action-container button {
+    cursor: pointer;
+    color: #ffffff;
+    height: 43px;
+    width: 40px;
+    border: none;
+    outline: none;
+}
+
+.btn--view {
+    background-color: #126094;
+}
+
+.btn--done {
+    background-color: #0A671F;
+}
+
+.btn--delete {
+    background-color: #CA8113;
+}
+
+button svg {
+    pointer-events: none;
 }
