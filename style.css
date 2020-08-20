@@ -14,18 +14,15 @@ body {
     padding-top: 100px;
     color: #ffffff;
     min-height: 100vh;
-    display: flex;
-    flex-direction:column;
-    align-items: center;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 header {
     font-size: 2.5rem;
     margin-bottom: 2.5rem;
-}
-
-.form {
-    width: 325px;
+    text-align: center;
 }
 
 input {
@@ -33,18 +30,9 @@ input {
     outline: none;
     font-size: 18px;
     padding: 8px 40px 8px 8px;
-    width: 300px;
+    width: 100%;
 }
 
-button[type="submit"] {
-    border: none;
-    outline: none;
-    position: relative;
-    left: -35px;
-    top: 2px;
-    background-color: transparent;
-    cursor: pointer;
-}
 .svg-inline--fa.fa-w-14,
 .svg-inline--fa.fa-w-10 {
 
@@ -52,19 +40,51 @@ button[type="submit"] {
     width: 20px;
 }
 
-.todo-filter input {
-    width: 100px;
+.btn--view {
+    background-color: #126094;
 }
 
+.btn--done {
+    background-color: #0A671F;
+}
+
+.btn--delete {
+    background-color: #CA8113;
+}
+
+button svg {
+    pointer-events: none;
+}
+
+
 .fixed-element {
-    display: flex;
+    display: block;
+    width: 100%;
+    text-align:center;
     margin-bottom: 20px;
 }
-select {
+
+.add-new__block {
+    display: flex;
+    position: relative;
+}
+
+.btn--add {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    outline: none;
+    background-color: transparent;
     cursor: pointer;
+    z-index: 1;
+}
+.todo-filter {
     height: 43px;
-    width: 120px;
     padding: 0 8px;
+    margin-bottom: 20px;
+    cursor: pointer;
     outline: none;
     border: none;
 }
@@ -89,7 +109,7 @@ select {
 }
 
 .todo__item .todo__input {
-    width: 325px;
+    min-width: calc(100% - 120px);
     background-color: #ffffff;
     color: #333333;
     text-overflow: ellipsis;
@@ -112,18 +132,4 @@ select {
     outline: none;
 }
 
-.btn--view {
-    background-color: #126094;
-}
 
-.btn--done {
-    background-color: #0A671F;
-}
-
-.btn--delete {
-    background-color: #CA8113;
-}
-
-button svg {
-    pointer-events: none;
-}

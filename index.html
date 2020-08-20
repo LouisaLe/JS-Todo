@@ -14,28 +14,31 @@
         <header>Todo List</header>
 
         <div class="fixed-element">
-            <form>
-                <input type="text" class="todo__input">
-                <button class="todo__btn" type="submit" title="Add Todo Item">
-                    <i class="fas fa-plus-square"></i>
-                </button>
-            </form>
 
-            <select type="text" class="todo-filter todo__input">
+            <select type="text" class="todo-filter">
                 <option value="all">All</option>
                 <option value="completed">Completed</option>
                 <option value="uncompleted">Uncompleted</option>
             </select>
+
+            <form class="add-new__block">
+                <input type="text" class="todo__input">
+                <button class="btn--add" type="submit" title="Add Todo Item">
+                    <i class="fas fa-plus-square"></i>
+                </button>
+            </form>
+
+            
         </div>
         <ul class="todo__list">
-            <li class="todo__item">
+            <!-- <li class="todo__item">
                 <div class="todo__input">testtetet hssh lorem isium ns j dj bana adymsms  sksks</div>
                 <div class="action-container">
                     <button class="btn--view"><i class="far fa-eye"></i></button>
                     <button class="btn--done"><i class="fas fa-check"></i></button>
                     <button class="btn--delete"><i class="fas fa-times"></i></button>
                 </div>
-            </li>
+            </li> -->
         </ul>
         
     </div>
